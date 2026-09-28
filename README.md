@@ -12,11 +12,12 @@ Everything in these repos is built and tested on this box:
 |---|---|
 | CPU | AMD Ryzen 9 9900X (12 cores) |
 | GPU | NVIDIA RTX 5080, 16 GB (Blackwell) |
-| RAM | 96 GB DDR5-6000 |
+| RAM | 96 GB DDR5-6000 (2x 48 GB) |
 | Board | Gigabyte X870E AORUS ELITE WIFI7 |
-| Storage | 2x 4 TB Kingston Fury Renegade NVMe + 2 TB WD external |
+| Storage | 2x 4 TB Kingston Fury Renegade NVMe (Gen4), 2 TB WD external |
 | OS | Ubuntu 24.04 LTS, kernel 7.0 |
-| Driver | NVIDIA 580, CUDA 12.8 |
+| Driver | NVIDIA 580.178 (CUDA 13.0) |
+| PyTorch | 2.11 + cu128 |
 
 Software on top: ComfyUI for images, Ollama for local LLMs, Claude Code for building.
 Nothing AI starts at boot. I turn each service on when I need it.
@@ -47,9 +48,9 @@ Nothing AI starts at boot. I turn each service on when I need it.
 
 | Repo | What it does |
 |---|---|
-| [block-buddies](https://github.com/CastilloworksAi/block-buddies) | A place-value number game for kids |
+| [block-buddies](https://castilloworks.ai/neuronest/play/) | Place-value number game for kids. Moved to castilloworks.ai, repo archived |
 | [valet-trash-calculator](https://github.com/CastilloworksAi/valet-trash-calculator) | Profit calculator for a valet trash business |
-| [killswitch](https://github.com/CastilloworksAi/killswitch) | Proof of concept: multi-OS data wipe scripts, LITE to NUCLEAR |
+| [killswitch](https://github.com/CastilloworksAi/killswitch) | Data wipe scripts for Linux, macOS, Windows, and ChromeOS. NUCLEAR tier is written and dry-runs by default; not yet run on live hardware |
 
 ## Stack
 
