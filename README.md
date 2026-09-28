@@ -29,7 +29,6 @@ Nothing AI starts at boot. I turn each service on when I need it.
 | [imagine](https://github.com/CastilloworksAi/imagine) | Type a prompt in the terminal, get a PNG. A small CLI for ComfyUI |
 | [headshot](https://github.com/CastilloworksAi/headshot) | Selfie in, studio headshots out, on your own GPU |
 | [clone](https://github.com/CastilloworksAi/clone) | Local voice cloning with Chatterbox. No per-character fees |
-| [localmind](https://github.com/CastilloworksAi/localmind) | A private ChatGPT on your own computer. Ollama plus a simple chat UI |
 | [grab](https://github.com/CastilloworksAi/grab) | Download video or audio from the web with one word |
 | [broll](https://github.com/CastilloworksAi/broll) | Terminal B-roll for screen recordings. Pure bash |
 | [terminal-fun](https://github.com/CastilloworksAi/terminal-fun) | Random terminal animations for recording content |
