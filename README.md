@@ -1,30 +1,55 @@
 # Hey, I'm Castillo
 
-I build AI tools and automation projects out of Texas. My work lives at the
-intersection of local AI pipelines, image generation, and practical software
-tools.
+I build AI tools out of Texas, and almost all of it runs on my own machine. No cloud bills, no data leaving the house.
 
-## What I'm building
+Most of what's here started as something I needed for my own work: image pipelines, LoRA training, voice cloning, a local chat app, and a pile of terminal tools I use every day.
 
-- **ComfyUI workflows** — production-ready pipelines for Flux, SDXL, LoRA
-  training, captioning, image editing, and image-to-video
-- **LoRA training tooling** — guide + a captioning web app for training
-  custom Flux models on consumer hardware
-- **Workstation scripts** — launch flags, backups, model downloaders for
-  Ubuntu + Blackwell GPU setups
-- **Automation tools** — Python scripts and shell utilities for real-world
-  problems
+## The rig
 
-## Repos
+Everything in these repos is built and tested on this box:
 
-| Project | What it is |
+| Part | What I run |
 |---|---|
-| [comfyui-workflows](https://github.com/CastilloworksAi/comfyui-workflows) | ComfyUI workflow collection — Flux, SDXL, LoRA training, captioning, image-to-video |
-| [lora-training-guide](https://github.com/CastilloworksAi/lora-training-guide) | Full beginner pipeline: raw images → trained `.safetensors` |
-| [lora-studio](https://github.com/CastilloworksAi/lora-studio) | Local web app for captioning datasets and exporting ComfyUI training workflows |
-| [ai-workstation](https://github.com/CastilloworksAi/ai-workstation) | Launch scripts, backups, model downloaders for Ubuntu + RTX 5080 |
-| [valet-trash-calculator](https://github.com/CastilloworksAi/valet-trash-calculator) | Python profitability modeler for a valet trash business |
-| [killswitch](https://github.com/CastilloworksAi/killswitch) | Multi-OS data destruction framework — LITE to NUCLEAR tiers |
+| CPU | AMD Ryzen 9 9900X (12 cores) |
+| GPU | NVIDIA RTX 5080, 16 GB (Blackwell) |
+| RAM | 96 GB DDR5-6000 |
+| Board | Gigabyte X870E AORUS ELITE WIFI7 |
+| Storage | 2x 4 TB Kingston Fury Renegade NVMe + 2 TB WD external |
+| OS | Ubuntu 24.04 LTS, kernel 7.0 |
+| Driver | NVIDIA 580, CUDA 12.8 |
+
+Software on top: ComfyUI for images, Ollama for local LLMs, Claude Code for building.
+Nothing AI starts at boot. I turn each service on when I need it.
+
+## Tools
+
+| Repo | What it does |
+|---|---|
+| [imagine](https://github.com/CastilloworksAi/imagine) | Type a prompt in the terminal, get a PNG. A small CLI for ComfyUI |
+| [headshot](https://github.com/CastilloworksAi/headshot) | Selfie in, studio headshots out, on your own GPU |
+| [clone](https://github.com/CastilloworksAi/clone) | Local voice cloning with Chatterbox. No per-character fees |
+| [localmind](https://github.com/CastilloworksAi/localmind) | A private ChatGPT on your own computer. Ollama plus a simple chat UI |
+| [grab](https://github.com/CastilloworksAi/grab) | Download video or audio from the web with one word |
+| [broll](https://github.com/CastilloworksAi/broll) | Terminal B-roll for screen recordings. Pure bash |
+| [terminal-fun](https://github.com/CastilloworksAi/terminal-fun) | Random terminal animations for recording content |
+
+## Image models and training
+
+| Repo | What it does |
+|---|---|
+| [comfyui-workflows](https://github.com/CastilloworksAi/comfyui-workflows) | My ComfyUI workflows: Flux, SDXL, LoRA training, captioning |
+| [z-image-turbo-comfy](https://github.com/CastilloworksAi/z-image-turbo-comfy) | One-command ComfyUI for Z-Image-Turbo on RTX 50-series cards |
+| [lora-training-guide](https://github.com/CastilloworksAi/lora-training-guide) | Beginner guide, from raw images to a trained `.safetensors` |
+| [lora-studio](https://github.com/CastilloworksAi/lora-studio) | Local web app for captioning datasets and exporting training jobs |
+| [ai-workstation](https://github.com/CastilloworksAi/ai-workstation) | Setup scripts, backups, and model downloaders for this rig |
+
+## Other stuff
+
+| Repo | What it does |
+|---|---|
+| [block-buddies](https://github.com/CastilloworksAi/block-buddies) | A place-value number game for kids |
+| [valet-trash-calculator](https://github.com/CastilloworksAi/valet-trash-calculator) | Profit calculator for a valet trash business |
+| [killswitch](https://github.com/CastilloworksAi/killswitch) | Proof of concept: multi-OS data wipe scripts, LITE to NUCLEAR |
 
 ## Stack
 
@@ -33,7 +58,8 @@ tools.
 ![ComfyUI](https://img.shields.io/badge/ComfyUI-AI%20Pipelines-blueviolet?style=flat)
 ![Ollama](https://img.shields.io/badge/Ollama-Local%20LLMs-000000?style=flat)
 ![CUDA](https://img.shields.io/badge/CUDA-12.8-76B900?style=flat&logo=nvidia&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-E95420?style=flat&logo=ubuntu&logoColor=white)
 
 ---
 
-*Based in Texas. Building in public.*
+*Based in Texas. More at [castilloworks.ai](https://castilloworks.ai).*
